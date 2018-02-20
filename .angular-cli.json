@@ -8,6 +8,11 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
+        {
+          "glob": "**/*",
+          "input": "../node_modules/cesium/Build/Cesium",
+          "output": "./assets/cesium"
+        },
         "assets",
         "favicon.ico"
       ],
@@ -19,9 +24,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/cesium/Build/Cesium/Widgets/widgets.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/cesium/Build/Cesium/Cesium.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
