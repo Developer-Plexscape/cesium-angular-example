@@ -17,8 +17,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Contributions
 
 Pull requests are appreciated.
+
 ---
 
 Developed by the Plex.Earth team.
 
-<a href="https://plexearth.com/"><img style="max-width:50% !important" alt="Plex.Earth" src="plexscape.jpg" /></a>
+<a href="https://plexearth.com/"><img alt="Plex.Earth" src="plexscape.jpg" /></a>
