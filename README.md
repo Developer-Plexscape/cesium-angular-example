@@ -21,4 +21,4 @@ Pull requests are appreciated.
 
 Developed by the Plex.Earth team.
 
-<a href="https://plexearth.com/"><img style="width:50%" alt="Plex.Earth" src="plexscape.jpg" /></a>
+<a href="https://plexearth.com/"><img style="max-width:50% !important" alt="Plex.Earth" src="plexscape.jpg" /></a>
