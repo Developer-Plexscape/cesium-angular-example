@@ -1,6 +1,6 @@
 # cesium-angular-example
 
-A simple web application that demonstrates integration of [Cesium](https://cesiumjs.org/) with [Angular](https://angular.io/).
+A simple web application that demonstrates integration of [Cesium](https://cesiumjs.org/) with **LATEST** version of [Angular](https://angular.io/).
 
 ## Setup
 
@@ -19,6 +19,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you are using **Angular 5**, please checkout out [this](https://github.com/Developer-Plexscape/cesium-angular-example/tree/ng5) branch.
 
 ## Contributions
 
