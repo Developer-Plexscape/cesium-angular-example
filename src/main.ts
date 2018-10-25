@@ -10,5 +10,7 @@ if (environment.production) {
 
 window['CESIUM_BASE_URL'] = '/assets/cesium/';
 
+Cesium.Ion.defaultAccessToken = environment.accessToken;
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
