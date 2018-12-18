@@ -4,11 +4,9 @@ import { Directive, ElementRef, OnInit } from '@angular/core';
   selector: '[appCesium]'
 })
 export class CesiumDirective implements OnInit {
-
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
     const viewer = new Cesium.Viewer(this.el.nativeElement);
   }
-
 }

@@ -37,7 +37,6 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/.angulardoc.json
 
 # System Files
 .DS_Store
