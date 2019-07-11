@@ -1,32 +1,36 @@
-# cesium-angular-example
+# Welcome to cesium-angular-example 👋
+![Version](https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000)
+[![Twitter: plexearth](https://img.shields.io/twitter/follow/plexearth.svg?style=social)](https://twitter.com/plexearth)
 
-A simple web application that demonstrates integration of [Cesium](https://cesiumjs.org/) with **LATEST** version of [Angular](https://angular.io/).
+> A simple web application that demonstrates integration of [Cesium](https://cesiumjs.org/) with **LATEST** version of [Angular](https://angular.io/).
 
-## Setup
+## Install
 
-Run `npm install -g @angular/cli` to install **Angular CLI**.
+```sh
+npm install
+```
 
-Run `npm install` to install all the dependencies.
+## Usage
 
-## Development server
+```sh
+ng serve
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run tests
 
-## Build
+```sh
+ng test
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Author
 
-## Further help
+👤 **Plexscape**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-If you are using **Angular 5**, please checkout out [this](https://github.com/Developer-Plexscape/cesium-angular-example/tree/ng5) branch.
+* Twitter: [@plexearth](https://twitter.com/plexearth)
+* Github: [@Developer-Plexscape](https://github.com/Developer-Plexscape)
 
-## Contributions
+## 🤝 Contributing
 
-Pull requests are appreciated.
+Contributions, issues and feature requests are welcome!
 
----
-
-Developed by the Plex.Earth team.
-
-<a href="https://plexearth.com/"><img alt="Plex.Earth" src="plexscape.jpg" /></a>
+Feel free to check [issues page](https://github.com/Developer-Plexscape/cesium-angular-example/issues).
