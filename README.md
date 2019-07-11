@@ -16,6 +16,8 @@ npm install
 ng serve
 ```
 
+> If you are using **Cesium ion**, make sure that you add your personal access token in the environment files.
+
 ## Run tests
 
 ```sh
