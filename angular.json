@@ -31,9 +31,6 @@
             "styles": [
               "node_modules/cesium/Build/Cesium/Widgets/widgets.css",
               "src/styles.css"
-            ],
-            "scripts": [
-              "node_modules/cesium/Build/Cesium/Cesium.js"
             ]
           },
           "configurations": {
@@ -99,9 +96,6 @@
             "styles": [
               "node_modules/cesium/Build/Cesium/Widgets/widgets.css",
               "src/styles.css"
-            ],
-            "scripts": [
-              "node_modules/cesium/Build/Cesium/Cesium.js"
             ]
           }
         },

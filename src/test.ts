@@ -9,6 +9,9 @@ import {
 
 declare const require: any;
 
+// tslint:disable-next-line: no-string-literal
+window['CESIUM_BASE_URL'] = '/assets/cesium/';
+
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,

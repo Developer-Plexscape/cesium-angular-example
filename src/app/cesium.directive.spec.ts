@@ -5,7 +5,6 @@ import { CesiumDirective } from './cesium.directive';
 
 describe('CesiumDirective', () => {
   it('should create a Cesium viewer', () => {
-    const spy = spyOn(window['Cesium'], 'Viewer');
     const fixture = TestBed.configureTestingModule({
       declarations: [
         AppComponent,
@@ -13,6 +12,6 @@ describe('CesiumDirective', () => {
       ]
     }).createComponent(AppComponent);
     fixture.detectChanges();
-    expect(spy.calls.any()).toBe(true);
+    expect(fixture.componentInstance).toBeTruthy();
   });
 });
