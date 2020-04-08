@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to cesium-angular-example!');
+    expect(page.getTitleText()).toEqual('cesium-angular-example app is running!');
   });
 
   afterEach(async () => {
