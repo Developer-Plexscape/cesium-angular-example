@@ -5,9 +5,11 @@ import { Viewer } from 'cesium';
   selector: '[appCesium]'
 })
 export class CesiumDirective implements OnInit {
+
   constructor(private el: ElementRef) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     const viewer = new Viewer(this.el.nativeElement);
   }
+
 }
