@@ -1,5 +1,4 @@
 # Welcome to cesium-angular-example 👋
-![Version](https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000)
 [![Twitter: plexearth](https://img.shields.io/twitter/follow/plexearth.svg?style=social)](https://twitter.com/plexearth)
 
 > A simple web application that demonstrates integration of [Cesium](https://cesiumjs.org/) with the **LATEST** version of [Angular](https://angular.io/).
