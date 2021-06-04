@@ -1,6 +1,6 @@
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
-import 'zone.js/dist/zone-testing';
+import 'zone.js/testing';
 import { getTestBed } from '@angular/core/testing';
 import {
   BrowserDynamicTestingModule,
@@ -14,8 +14,7 @@ declare const require: {
   };
 };
 
-// tslint:disable-next-line: no-string-literal
-window['CESIUM_BASE_URL'] = '/assets/cesium/';
+(window as Record<string, any>)['CESIUM_BASE_URL'] = '/assets/cesium/';
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
