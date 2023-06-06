@@ -17,12 +17,6 @@ ng serve
 
 > If you are using **Cesium ion**, make sure that you add your personal access token in `src\main.ts`.
 
-## Run tests
-
-```sh
-ng test
-```
-
 ## Author
 
 👤 **Plexscape**
