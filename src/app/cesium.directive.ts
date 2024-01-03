@@ -2,7 +2,8 @@ import { Directive, ElementRef, OnInit } from '@angular/core';
 import { Viewer } from 'cesium';
 
 @Directive({
-  selector: '[appCesium]'
+  selector: '[appCesium]',
+  standalone: true
 })
 export class CesiumDirective implements OnInit {
 

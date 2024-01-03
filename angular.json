@@ -95,10 +95,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cesium-angular-example:build:production"
+              "buildTarget": "cesium-angular-example:build:production"
             },
             "development": {
-              "browserTarget": "cesium-angular-example:build:development"
+              "buildTarget": "cesium-angular-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,13 +106,12 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cesium-angular-example:build"
+            "buildTarget": "cesium-angular-example:build"
           }
         },
         "test": {
           "builder": "@angular-builders/custom-webpack:karma",
           "options": {
-            "main": "src/test.ts",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
