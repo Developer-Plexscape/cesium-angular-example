@@ -22,7 +22,7 @@ ng serve
 👤 **Plexscape**
 
 * Website: http://www.plexearth.com
-* Twitter: [@plexearth](https://twitter.com/plexearth)
+* X: [@plexearth](https://x.com/plexearth)
 * LinkedIn: [@plexearth](https://linkedin.com/company/plexearth)
 
 ## 🤝 Contributing
