@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
-import { CesiumDirective } from './cesium.directive';
+import { Cesium } from './cesium';
 
 @Component({
   selector: 'app-root',
-  imports: [CesiumDirective],
+  imports: [Cesium],
   template: '<div appCesium></div>'
 })
-export class AppComponent {}
+export class App {}

@@ -5,7 +5,7 @@ import { Viewer } from 'cesium';
   selector: '[appCesium]',
   standalone: true
 })
-export class CesiumDirective implements OnInit {
+export class Cesium implements OnInit {
 
   constructor(private el: ElementRef) {}
 
