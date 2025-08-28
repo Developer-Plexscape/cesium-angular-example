@@ -1,16 +1,12 @@
-import { Directive, ElementRef, OnInit } from '@angular/core';
+import { afterNextRender, Directive, ElementRef, inject } from '@angular/core';
 import { Viewer } from 'cesium';
 
 @Directive({
-  selector: '[appCesium]',
-  standalone: true
+  selector: '[appCesium]'
 })
-export class Cesium implements OnInit {
-
-  constructor(private el: ElementRef) {}
-
-  ngOnInit(): void {
-    const viewer = new Viewer(this.el.nativeElement);
+export class Cesium {
+  constructor() {
+    const el = inject(ElementRef);
+    afterNextRender(() => new Viewer(el.nativeElement));
   }
-
 }
