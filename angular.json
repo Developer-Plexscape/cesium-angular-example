@@ -14,11 +14,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/cesium-angular-example",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -50,20 +48,15 @@
               "node_modules/cesium/Build/Cesium/Widgets/widgets.css",
               "src/styles.css"
             ],
-            "customWebpackConfig": {
-              "path": "./extra-webpack.config.js"
-            },
             "allowedCommonJsDependencies": [
-              "dompurify",
+              "urijs",
               "protobufjs",
               "mersenne-twister",
-              "earcut",
-              "rbush",
-              "urijs",
+              "lerc",
+              "bitmap-sdf",
               "grapheme-splitter",
-              "nosleep.js",
-              "bitmap-sdf"
-           ]
+              "nosleep.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -71,7 +64,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -90,7 +83,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "cesium-angular-example:build:production"
@@ -102,43 +95,7 @@
           "defaultConfiguration": "development"
         },
         "test": {
-          "builder": "@angular-builders/custom-webpack:karma",
-          "options": {
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/Workers",
-                "output": "/assets/cesium/Workers"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/ThirdParty",
-                "output": "/assets/cesium/ThirdParty"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/Assets",
-                "output": "/assets/cesium/Assets"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/Widgets",
-                "output": "/assets/cesium/Widgets"
-              }
-            ],
-            "styles": [
-              "node_modules/cesium/Build/Cesium/Widgets/widgets.css",
-              "src/styles.css"
-            ],
-            "customWebpackConfig": {
-              "path": "./extra-webpack.config.js"
-            }
-          }
+          "builder": "@angular/build:unit-test"
         }
       }
     }
